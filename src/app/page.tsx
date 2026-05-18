@@ -114,7 +114,7 @@ export default function Home() {
                 </Link>
               </StarBorder>
               <Link
-                href="/assets/AMINA%20BAYOUDH%20(4).pdf"
+                href="/assets/AMINA-BAYOUDH-CV.pdf"
                 className="px-8 py-3.5 rounded-full border border-white/25 text-white hover:border-white/60 transition-colors"
               >
                 Download CV
