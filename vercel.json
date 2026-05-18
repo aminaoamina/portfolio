@@ -3,15 +3,5 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "outputDirectory": ".next",
-  "env": [
-    {
-      "key": "NEXT_PUBLIC_SITE_URL",
-      "description": "Your portfolio website URL"
-    },
-    {
-      "key": "NEXT_PUBLIC_AUTHOR_NAME",
-      "description": "Your name"
-    }
-  ]
+  "outputDirectory": ".next"
 }
