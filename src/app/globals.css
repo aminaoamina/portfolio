@@ -40,8 +40,18 @@ h6 {
   letter-spacing: -0.01em;
 }
 
-.hero-title span:last-child {
-  background: linear-gradient(135deg, #b78bff 0%, #6cc8ff 55%, #9a7dff 100%);
+.font-title {
+  font-family: var(--font-playfair), "Playfair Display", "Times New Roman", serif;
+  letter-spacing: -0.01em;
+}
+
+.hero-title,
+.hero-title * {
+  font-family: var(--font-playfair), "Playfair Display", "Times New Roman", serif;
+}
+
+.hero-title-gradient span {
+  background: linear-gradient(135deg, #7fc9ff 0%, #6cc8ff 45%, #9a7dff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
