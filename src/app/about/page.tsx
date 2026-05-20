@@ -124,9 +124,9 @@ function AboutCard({ card, colSpan }: { card: (typeof ABOUT_CARDS)[0]; colSpan?:
         transition: `opacity 0.65s ease ${card.index * 0.12}s, transform 0.65s ease ${card.index * 0.12}s`,
         fontFamily: "'DM Sans', sans-serif",
         gridColumn: colSpan ? "1 / -1" : undefined,
+        borderColor: hovered ? "rgba(99,179,237,0.25)" : "rgba(255,255,255,0.08)",
       }}
       className="rounded-2xl overflow-hidden border shadow-2xl"
-      style2={{ borderColor: hovered ? "rgba(99,179,237,0.25)" : "rgba(255,255,255,0.08)" }}
     >
       <div
         style={{
