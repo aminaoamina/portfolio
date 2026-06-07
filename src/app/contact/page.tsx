@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from "react";
 
 const CONTACT_EMAIL = "amina.bayoudh@ieee.org";
 const LINKEDIN_URL = "https://www.linkedin.com/in/aminabayoudh/";
-const GITHUB_URL = "https://github.com/aminabayoudh";
+const GITHUB_URL = "https://github.com/aminaoamina";
 
 type FormState = "idle" | "sending" | "sent";
 
