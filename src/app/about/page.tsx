@@ -20,9 +20,9 @@ const ABOUT_CARDS = [
     content: (
       <>
         <p style={{ fontSize: "0.92rem", color: "#94a3b8", lineHeight: 1.65, margin: 0 }}>
-          I&apos;m a <strong style={{ color: "#cbd5e1", fontWeight: 600 }}>network infrastructure and data security</strong> engineering
+          I&apos;m a final-year <strong style={{ color: "#cbd5e1", fontWeight: 600 }}>network infrastructure and data security</strong> engineering
           student driven to work at the intersection of AI and cybersecurity. I&apos;m passionate about building
-          systems that solve real problems — not just for the challenge, but for the impact. My focus spans
+          systems that solve real problems, not just for the challenge, but for the impact. My focus spans
           SOC operations, SIEM, and SOAR, while I actively sharpen my AI skills to apply them directly
           within security contexts.
         </p>
@@ -69,7 +69,7 @@ const ABOUT_CARDS = [
         }}>Since 2022</span>
         <p style={{ fontSize: "0.92rem", color: "#94a3b8", lineHeight: 1.65, margin: 0 }}>
           Joined IEEE in my first university year. I&apos;ve helped organise events, led initiatives bridging
-          student communities, and created opportunities for peers to grow — because I believe in
+          student communities, and created opportunities for peers to grow, because I believe in
           lifting people as I climb.
         </p>
       </div>
@@ -90,7 +90,7 @@ const ABOUT_CARDS = [
     accentTo: "#63b3ed",
     content: (
       <p style={{ fontSize: "0.92rem", color: "#94a3b8", lineHeight: 1.65, margin: 0 }}>
-        I&apos;m always building something — a project, a skill, or an idea. I learned responsibility and
+        I&apos;m always building something: a project, a skill, or an idea. I learned responsibility and
         leadership the hard way, through exposure to real challenges. I thrive on doing things that are{" "}
         <strong style={{ color: "#cbd5e1", fontWeight: 600 }}>different</strong> and that leave a mark on the
         people and communities around me.
@@ -229,12 +229,12 @@ export default function AboutPage() {
 
             {/* Cards */}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "18px" }}>
-              {/* Academic Focus — full width */}
+              {/* Academic Focus - full width */}
               <AboutCard card={ABOUT_CARDS[0]} colSpan />
-              {/* IEEE + Mindset — side by side */}
+              {/* IEEE + Mindset - side by side */}
               <AboutCard card={ABOUT_CARDS[1]} />
               <AboutCard card={ABOUT_CARDS[2]} />
-              {/* Languages — full width */}
+              {/* Languages - full width */}
               <div
                 style={{
                   gridColumn: "1 / -1",

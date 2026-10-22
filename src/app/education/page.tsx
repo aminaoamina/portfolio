@@ -1,15 +1,13 @@
 "use client";
 
 import PageShell from "@/components/PageShell";
-import { EDUCATION } from "@/lib/constants";
 import { useEffect, useRef, useState } from "react";
 
-// Augment EDUCATION items with photo + location
 const EDUCATION_ENHANCED = [
   {
     institution: "ESPRIT School of Engineering",
-    period: "2022 — Present",
-    detail: "Engineering degree in Computer Science & Software Engineering",
+    period: "2023 – Present",
+    detail: "Engineering degree in IT, Network Infrastructure & Data Security",
     photo: "https://www.esprit.tn/wp-content/uploads/2025/01/ESPRIT-School-of-Engineering-ESE-image.jpg",
     location: "Pôle Technologique, 1, 2 rue André Ampère, 2088 Ariana, Tunisia",
     tag: "Engineering",
@@ -17,7 +15,7 @@ const EDUCATION_ENHANCED = [
   },
   {
     institution: "Lycée Abou El Kacem Chebbi",
-    period: "2018 — 2022",
+    period: "2019 – 2022",
     detail: "Baccalaureate in Experimental Sciences",
     photo: "https://plurielle.tn/pro/wp-content/uploads/2022/06/photo-75243.jpeg",
     location: "Sfax, Tunisia",

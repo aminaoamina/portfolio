@@ -5,6 +5,35 @@ import { useEffect, useRef, useState } from "react";
 
 const EXPERIENCE = [
   {
+    title: "Full-Stack & AI Engineering Intern",
+    company: "ALL SOFT MULTIMEDIA (ASM)",
+    period: "Jul – Aug 2026",
+    summary:
+      "Built APTISO, an AI-powered ISO 27001 compliance platform covering gap analysis, risk register, Statement of Applicability, and evidence tracking.",
+    highlights: [
+      "Full-stack platform with Next.js, NestJS, FastAPI, and PostgreSQL",
+      "Isolated AI service: RAG on pgvector, OCR evidence reading, and LLM document review with human validation",
+      "Hardened authentication with JWT, argon2, CSRF protection, and rate limiting",
+      "Audit logging across compliance workflows",
+    ],
+    tags: ["ISO 27001", "Next.js", "NestJS", "FastAPI", "RAG", "pgvector", "OCR"],
+    index: 0,
+  },
+  {
+    title: "AI & Cybersecurity Engineering Intern",
+    company: "FELCLOUD",
+    period: "Jul – Aug 2026",
+    summary:
+      "Built AI components for the Hackership platform and led security-focused engineering work.",
+    highlights: [
+      "Vision-LLM pipeline for structured CV extraction",
+      "Evidence-based GitHub skill-profiling engine backed by a Neo4j knowledge graph",
+      "Team lead for a self-hosted AI code reviewer (Kodus) and a security audit",
+    ],
+    tags: ["Vision LLM", "Neo4j", "Knowledge Graphs", "Kodus", "Security Audit"],
+    index: 1,
+  },
+  {
     title: "AI in Cybersecurity Intern",
     company: "ESPRIT TECH",
     period: "Jul – Aug 2025",
@@ -17,7 +46,7 @@ const EXPERIENCE = [
       "Followed full CRISP-DM methodology from data understanding through deployment",
     ],
     tags: ["Deep Learning", "Transformers", "TShark", "XAI", "CRISP-DM"],
-    index: 0,
+    index: 2,
   },
   {
     title: "Human & Social Training Intern",
@@ -31,7 +60,7 @@ const EXPERIENCE = [
       "Gained exposure to HR operations and organisational workflows",
     ],
     tags: ["SQL", "IT Operations", "HR", "Database Management"],
-    index: 1,
+    index: 3,
   },
 ];
 
@@ -67,7 +96,7 @@ function ExperienceCard({ item }: { item: (typeof EXPERIENCE)[0] }) {
         <div className="relative w-9 h-9">
           <div className="absolute inset-0 rounded-full border border-sky-400/30 group-hover:border-sky-400/60 transition-colors duration-500" />
           <div className="absolute inset-[3px] rounded-full bg-slate-900 border border-sky-400/50 group-hover:border-sky-400 transition-colors duration-300" />
-          {/* Gradient dot core — matches education's timeline-dot */}
+          {/* Gradient dot core - matches education's timeline-dot */}
           <div
             className="absolute inset-[7px] rounded-full group-hover:opacity-100 transition-opacity duration-300"
             style={{
@@ -91,10 +120,10 @@ function ExperienceCard({ item }: { item: (typeof EXPERIENCE)[0] }) {
           transition: "border-color 0.4s ease",
         }}
       >
-        {/* Scan line — top edge */}
+        {/* Scan line - top edge */}
         <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-sky-400/40 to-transparent" />
 
-        {/* Hover accent line — matches education card's decorative line */}
+        {/* Hover accent line - matches education card's decorative line */}
         <div
           style={{
             position: "absolute",
@@ -116,7 +145,7 @@ function ExperienceCard({ item }: { item: (typeof EXPERIENCE)[0] }) {
           >
             {item.title}
           </h2>
-          {/* Period badge — matches education's calendar badge style */}
+          {/* Period badge - matches education's calendar badge style */}
           <span
             className="shrink-0 flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full"
             style={{
@@ -209,7 +238,7 @@ export default function ExperiencePage() {
 
       <PageShell>
         <section className="exp-bg-grid min-h-screen py-24 px-4 sm:px-6 relative overflow-hidden">
-          {/* Ambient glow blobs — same as education page */}
+          {/* Ambient glow blobs - same as education page */}
           <div
             className="pointer-events-none absolute"
             style={{
@@ -274,7 +303,7 @@ export default function ExperiencePage() {
                 Roles and research that defined my technical edge.
               </p>
 
-              {/* Decorative divider — matches education page exactly */}
+              {/* Decorative divider - matches education page exactly */}
               <div className="mt-8 flex items-center gap-3">
                 <div
                   style={{
@@ -311,7 +340,7 @@ export default function ExperiencePage() {
               </div>
             </div>
 
-            {/* Bottom credits line — matches education page */}
+            {/* Bottom credits line - matches education page */}
             <div
               className="mt-16 flex items-center gap-3"
               style={{ opacity: 0.35 }}

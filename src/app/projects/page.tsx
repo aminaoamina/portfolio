@@ -9,6 +9,36 @@ import { useEffect, useRef, useState } from "react";
 
 const TECHNICAL_PROJECTS = [
   {
+    title: "FortiFlow – DevSecOps CI/CD Pipeline",
+    role: "DevSecOps · CI/CD · Application Security",
+    period: "Sep – Oct 2026",
+    description:
+      "Secured GitLab CI/CD pipeline running on a self-hosted runner, enforcing blocking quality gates from commit to deployment.",
+    highlights: [
+      "Shift-left checks with pre-commit hooks and Gitleaks secret scanning",
+      "SAST with Semgrep, Bandit, and SonarCloud; DAST with OWASP ZAP",
+      "Trivy SCA, image scanning, and SBOM generation plus Checkov IaC scanning, with Slack alerts",
+    ],
+    technologies: "GitLab CI · Gitleaks · Semgrep · Bandit · SonarCloud · Trivy · Checkov · OWASP ZAP · Slack",
+    links: { github: "https://gitlab.com/dev_sec_ops3/fortiflow", demo: null },
+    index: 0,
+  },
+  {
+    title: "FIN-SHIELD – Transformer Tax-Risk Engine",
+    role: "Deep Learning · Risk Scoring · FinTech",
+    period: "Sep 2026",
+    description:
+      "Two-level self-attention Transformer that ranks taxpayers' declaration histories by review priority, trained on a calibrated synthetic Tunisian tax simulator.",
+    highlights: [
+      "Hierarchical self-attention over declarations and taxpayer histories",
+      "Calibrated synthetic simulator modelling Tunisian tax declarations",
+      "82.6% accuracy and 0.92 PR-AUC on a held-out year, served through FastAPI",
+    ],
+    technologies: "Python · PyTorch · Transformer · FastAPI",
+    links: { github: "https://github.com/aminaoamina/FIN-SHIELD-Transformer-Risk-Engine", demo: null },
+    index: 1,
+  },
+  {
     title: "ENIGMA – Next-Generation SOC",
     role: "Security Engineering · AI · DevSecOps",
     period: "Nov 2025 – May 2026",
@@ -21,7 +51,7 @@ const TECHNICAL_PROJECTS = [
     ],
     technologies: "Wazuh · Shuffle · pfSense · LLM · Keycloak · MidPoint IGA · PingCastle · Flask",
     links: { github: null, demo: null },
-    index: 0,
+    index: 2,
   },
   {
     title: "Phishing Detection System",
@@ -36,7 +66,7 @@ const TECHNICAL_PROJECTS = [
     ],
     technologies: "Python · XGBoost · LLM · Gmail API · PhishTank",
     links: { github: "https://github.com/aminaoamina/Phishing-Project", demo: null },
-    index: 1,
+    index: 3,
   },
   {
     title: "DDoS Transformer-Based Detection",
@@ -51,7 +81,7 @@ const TECHNICAL_PROJECTS = [
     ],
     technologies: "Python · PyTorch · TShark · SHAP · CRISP-DM",
     links: { github: "https://github.com/aminaoamina/DDos-Transformer-Based-Detection", demo: null },
-    index: 2,
+    index: 4,
   },
   {
     title: "LotusAura – AI Healthcare Platform",
@@ -62,11 +92,11 @@ const TECHNICAL_PROJECTS = [
     highlights: [
       "Multilingual RAG assistant with emotionally aware voice AI",
       "Secure family health record management with role-based access",
-      "4th Place — IEEE TSYP13 EMBS CIS WIE Challenge",
+      "4th Place at IEEE TSYP13 EMBS CIS WIE Challenge",
     ],
     technologies: "Python · RAG · LLM · Voice AI · Next.js",
     links: { github: null, demo: "https://drive.google.com/file/d/1TiXYlkCCjPsfsjLUyp8gKdZ5BMAnqHff/view?usp=sharing" },
-    index: 3,
+    index: 5,
   },
   {
     title: "EZGO – Smart Urban Mobility App",
@@ -81,14 +111,14 @@ const TECHNICAL_PROJECTS = [
     ],
     technologies: "Java · Symfony · php · AI · 2FA",
     links: { github: null, demo: null },
-    index: 4,
+    index: 6,
   },
   {
     title: "AzulTunes – Travel & Tourism Platform",
     role: "Full-Stack · Web · AI",
     period: "Jan – May 2024",
     description:
-      "Sustainable tourism platform for Tunisia with personalized travel experiences, cultural promotion, and an AI assistant — recognized as a Top 5 university project.",
+      "Sustainable tourism platform for Tunisia with personalized travel experiences, cultural promotion, and an AI assistant, recognized as a Top 5 university project.",
     highlights: [
       "AzulBot AI assistant for personalized travel recommendations",
       "User profiles, bookings, community forums, and cultural content",
@@ -96,7 +126,7 @@ const TECHNICAL_PROJECTS = [
     ],
     technologies: "HTML · CSS · JavaScript · PHP · AI Chatbot",
     links: { github: null, demo: "https://www.youtube.com/watch?v=vu_uBOs_uzM" },
-    index: 5,
+    index: 7,
   },
 ];
 
@@ -113,6 +143,28 @@ type DesignProject = {
 
 const DESIGN_PROJECTS: DesignProject[] = [
   {
+    title: "IEEE Day",
+    type: "Media Manager",
+    period: "2026",
+    description:
+      "Celebration campaign for IEEE Day at ESPRIT, uniting every student branch chapter under one vibrant, tech-forward identity.",
+    cover: "/assets/images/Media-Projects/IEEE-Day/banner.jpg",
+    link: "https://www.facebook.com/events/1779675636510246",
+    linkLabel: "Facebook event",
+    index: 0,
+  },
+  {
+    title: "IEEE ESPRIT Recruitment",
+    type: "Media Manager",
+    period: "2026",
+    description:
+      "Playful, retro desktop-inspired recruitment campaign welcoming new members to the IEEE ESPRIT Student Branch.",
+    cover: "/assets/images/Media-Projects/Recruitment/banner.jpg",
+    link: "https://www.facebook.com/IEEEESPRIT",
+    linkLabel: "Facebook page",
+    index: 1,
+  },
+  {
     title: "Pegasus Connect",
     type: "Media Team Lead",
     period: "2026",
@@ -121,7 +173,7 @@ const DESIGN_PROJECTS: DesignProject[] = [
     cover: "/assets/images/Media-Projects/Pegasus-connect/Banner.png",
     link: "https://www.facebook.com/events/2509842162800000",
     linkLabel: "Facebook event",
-    index: 0,
+    index: 2,
   },
   {
     title: "Code2Cure 3.0",
@@ -132,7 +184,7 @@ const DESIGN_PROJECTS: DesignProject[] = [
     cover: "/assets/images/Media-Projects/codecure/Banner2.jpg",
     link: "https://www.facebook.com/profile.php?id=61572627656012",
     linkLabel: "Facebook profile",
-    index: 1,
+    index: 3,
   },
   {
     title: "Code2Cure 2.0",
@@ -143,7 +195,7 @@ const DESIGN_PROJECTS: DesignProject[] = [
     cover: "/assets/images/Media-Projects/codecure/Banner.jpg",
     link: "https://www.facebook.com/profile.php?id=61572627656012",
     linkLabel: "Facebook profile",
-    index: 2,
+    index: 4,
   },
   {
     title: "EZGO",
@@ -154,7 +206,7 @@ const DESIGN_PROJECTS: DesignProject[] = [
     cover: "/assets/images/Media-Projects/EZGO/Banner.png",
     link: "https://www.instagram.com/ezgo.tn/",
     linkLabel: "Instagram page",
-    index: 3,
+    index: 5,
   },
   {
     title: "IEEE IAS Tunisia Annual Meeting 5.0",
@@ -165,7 +217,7 @@ const DESIGN_PROJECTS: DesignProject[] = [
     cover: "/assets/images/Media-Projects/IASTAM5/banner.png",
     link: "https://www.facebook.com/IASTunisiaAM",
     linkLabel: "Facebook page",
-    index: 4,
+    index: 6,
   },
   {
     title: "IEEE IES SYP 2.0",
@@ -176,7 +228,7 @@ const DESIGN_PROJECTS: DesignProject[] = [
     cover: "/assets/images/Media-Projects/IES-SYP-2/banner.jpg",
     link: "https://www.instagram.com/ieee_ies_syp/",
     linkLabel: "Instagram page",
-    index: 5,
+    index: 7,
   },
   {
     title: "IEEE WIE ESPRIT SBAG",
@@ -187,7 +239,7 @@ const DESIGN_PROJECTS: DesignProject[] = [
     cover: "/assets/images/Media-Projects/Media-manager/banner2.png",
     link: "https://www.instagram.com/ieee_wie_esprit/",
     linkLabel: "Instagram page",
-    index: 6,
+    index: 8,
   },
   {
     title: "IEEE ESPRIT Student Branch",
@@ -198,7 +250,7 @@ const DESIGN_PROJECTS: DesignProject[] = [
     cover: "/assets/images/Media-Projects/Media-manager/banner1.png",
     link: "https://www.facebook.com/IEEEESPRIT",
     linkLabel: "Facebook page",
-    index: 7,
+    index: 9,
   },
 ];
 
@@ -270,7 +322,7 @@ function TechCard({ item }: { item: (typeof TECHNICAL_PROJECTS)[0] }) {
           <div className="flex gap-3">
             {item.links.github && (
               <a href={item.links.github} target="_blank" rel="noopener noreferrer" className="text-xs font-mono tracking-wider flex items-center gap-1.5 transition-colors duration-200" style={{ color: "rgba(99,179,237,0.6)" }} onMouseEnter={(e) => (e.currentTarget.style.color = "#63b3ed")} onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(99,179,237,0.6)")}>
-                GitHub →
+                {item.links.github.includes("gitlab.com") ? "GitLab →" : "GitHub →"}
               </a>
             )}
             {item.links.demo && (
@@ -494,7 +546,7 @@ export default function ProjectsPage() {
             {/* Content */}
             <div className="content-fade" style={{ opacity: animating ? 0 : 1, transform: animating ? "translateY(8px)" : "translateY(0)" }}>
 
-              {/* Technical — timeline */}
+              {/* Technical - timeline */}
               {activeTab === "technical" && (
                 <div className="relative">
                   <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px" style={{ background: "linear-gradient(to bottom, rgba(99,179,237,0.35) 0%, rgba(99,179,237,0.08) 70%, transparent 100%)" }} />
@@ -506,7 +558,7 @@ export default function ProjectsPage() {
                 </div>
               )}
 
-              {/* Design — card grid + CTA */}
+              {/* Design - card grid + CTA */}
               {activeTab === "design" && (
                 <div className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -524,7 +576,7 @@ export default function ProjectsPage() {
                       <p className="text-[11px] font-mono tracking-[0.28em] uppercase mb-2" style={{ color: "#9f7aea" }}>Available for hire</p>
                       <h3 className="text-lg font-semibold text-white" style={{ fontFamily: "'Playfair Display', serif" }}>Need design work done?</h3>
                       <p className="mt-1 text-sm" style={{ color: "#64748b", maxWidth: "42ch" }}>
-                        Branding, social campaigns, event visuals, motion, merch — reach out and we'll figure out the rest.
+                        Branding, social campaigns, event visuals, motion, merch. Reach out and we'll figure out the rest.
                       </p>
                     </div>
                     <Link

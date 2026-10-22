@@ -114,7 +114,7 @@ function CertCard({ item }: { item: (typeof CERTIFICATES)[0] }) {
           }}
         />
 
-        {/* NVIDIA badge — top right */}
+        {/* NVIDIA badge - top right */}
         <div className="absolute top-5 right-6 flex items-center gap-1.5">
           <div
             className="w-5 h-5 rounded flex items-center justify-center"
